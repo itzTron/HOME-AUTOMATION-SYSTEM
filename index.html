@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Home Automation Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* CSS Styling for a Clean Mobile Interface */
+    body { 
+        font-family: 'Verdana', sans-serif; 
+        text-align: center; 
+        margin: 0; 
+        padding-top: 50px; 
+        background-color: #f4f8fb;
+    }
+    h1 { color: #2c3e50; }
+    h3 { color: #555; margin-bottom: 10px; margin-top: 30px;}
+    
+    /* Button Styling */
+    .button { 
+        display: inline-block; 
+        padding: 15px 30px; 
+        font-size: 20px; 
+        cursor: pointer; 
+        text-align: center; 
+        text-decoration: none; 
+        outline: none; 
+        color: #fff; 
+        background-color: #2ecc71; /* Green for ON */
+        border: none; 
+        border-radius: 10px; 
+        box-shadow: 0 4px #999;
+        transition: 0.1s;
+        width: 150px;
+    }
+    
+    .button:active {
+        background-color: #27ae60; 
+        box-shadow: 0 2px #666; 
+        transform: translateY(2px);
+    }
+    
+    /* Styling for the OFF state */
+    .off {
+        background-color: #e74c3c; /* Red for OFF */
+    }
+    .off:active {
+        background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏠 Smart Home Control</h1>
+  
+  <div class="card">
+      <h3>🔴 Living Room (Red)</h3>
+      <a href="/toggle1"><button class="button">TOGGLE</button></a>
+      
+      <h3>🟢 Kitchen (Green)</h3>
+      <a href="/toggle2"><button class="button">TOGGLE</button></a>
+      
+      <h3>🔵 Bedroom Fan (Blue)</h3>
+      <a href="/toggle3"><button class="button">TOGGLE</button></a>
+      
+      <h3>🟡 Porch Light (Yellow)</h3>
+      <a href="/toggle4"><button class="button">TOGGLE</button></a>
+  </div>
+
+</body>
+</html>
